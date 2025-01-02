@@ -13,9 +13,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-.search-bar{
+
+.search-bar {
     border-radius: 5px;
 }
+
 .header {
     min-height: fit-content;
     height: 8vh;
@@ -25,7 +27,8 @@ body {
     align-items: center;
     border-bottom: 0.5px solid gray;
 }
-.container{
+
+.container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -33,14 +36,17 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
-.logo-container{
-    padding: 0 10px ;
+
+.logo-container {
+    padding: 0 10px;
 }
-.icon-container{
-    padding: 10px ;
+
+.icon-container {
+    padding: 10px;
     display: flex;
     gap: 10px;
 }
+
 /* #search-icon{
     display: none ;
 } */
@@ -61,48 +67,37 @@ body {
     transform: translateY(5px);
     font-size: 20px;
 }
-.content-container{
-    display: grid;
-    grid-template-columns: 20% 80%;
+
+.content-container {
+    display: flex;
+    /* grid-template-columns: 20% 80%; */
 }
 
-#side-bar-section {
-    width: 250px;
-    height: 92vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
 
-#side-bar-section>div {
-    margin-bottom: 60px;
-}
 
 .side-bar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 0;
     padding-left: 0;
-    width: 250px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .side-bar>li {
     list-style-type: none;
-    margin-bottom: 20px;
-    position: relative;
     box-sizing: border-box;
-    width: calc(250px - 20px);
-    padding-left: 20px;
-    height: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 #active-title {
     background: rgba(188, 195, 204, 0.5);
     height: 40px;
-    display: flex;
-    margin-bottom: 20px;
-    left: 0%;
-    align-items: center;
 }
 
 .material-icons {
@@ -117,17 +112,8 @@ body {
     text-decoration: none;
     color: rgb(53, 50, 49);
     font-size: 15px;
-    position: absolute;
-    top: 5%;
-    left: 35%;
 }
 
-.active {
-    position: absolute;
-    top: auto;
-    left: 35%;
-    font-weight: bold;
-}
 
 .fa-clock,
 .fa-thumbs-up {
@@ -165,40 +151,60 @@ i {
 #video-section {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     flex-wrap: wrap;
     justify-content: space-around;
     height: 92vh;
     overflow: auto;
+    width: 100%;
+}
+
+#side-bar-section {
+    width: 20vw;
+    height: 92vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+}
+
+#side-bar-section>div {
+    margin-bottom: 60px;
 }
 
 .tile {
-    margin-top: 20px;
+    margin: 10px;
     background-color: #f1f1f1c2;
     padding: 20px;
     border-radius: 10px;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
     height: fit-content;
 }
-.searchInput-container{
+
+.searchInput-container {
     display: flex;
     gap: 10px;
 }
-.fa-youtube-logo{
+
+.fa-youtube-logo {
     color: red;
     font-size: 39px;
     transition: 0.1s ease-in;
 }
-.fa-youtube-logo:hover{
+
+.fa-youtube-logo:hover {
     color: rgb(192, 0, 0);
     font-size: 40px;
 }
-.search-btn{
+
+.search-btn {
     padding: 0 10px;
 }
-.tile:hover{
+
+.tile:hover {
     background-color: #dddddd;
     transform: scale(1.1);
 }
+
 .images {
     width: 295px;
     height: 175px;
@@ -276,13 +282,15 @@ footer {
     z-index: 10;
     width: 100%;
 }
-.footer-container{
+
+.footer-container {
     /* background-color: blue; */
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-around;
 }
+
 @media all and (max-width: 255px) {
     .details {
         padding-left: 5px;
@@ -300,7 +308,8 @@ footer {
         flex: 1 1 100%;
         justify-self: center;
     }
-    #searchInput-container{
+
+    #searchInput-container {
         display: flex;
     }
 }
@@ -312,7 +321,7 @@ footer {
 }
 
 @media all and (max-width: 550px) {
-    #side-bar-section {
+    .side-bar-heading {
         display: none;
     }
 
@@ -323,22 +332,29 @@ footer {
     #youtube-logo-container {
         margin-left: 0;
     }
-    /* #search-icon{
-        display: block;
-    } */
-    .searchInput-container{
+    .searchInput-container {
         display: none;
+    }
+    
+
+
+}
+
+@media all and (min-width: 550px) {
+
+    #search-bar {
+        display: block;
     }
 
-    
-    
-}
-@media all and (min-width: 550px) {
-    
-    #search-bar{
-        display: block;
-    }
-    footer{
+    footer {
         display: none;
+    }
+}
+@media all and (max-width: 1280px) {
+    .side-bar-titles{
+        display: none;
+    }
+    .side-bar>li{
+        grid-template-columns: 1fr 0fr;
     }
 }
