@@ -18,19 +18,20 @@ body {
 }
 .header {
     min-height: fit-content;
-
+    height: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.5px solid gray;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    /* padding-bottom: 10px; */
-    z-index: 2;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .logo-container{
     padding: 0 10px ;
@@ -60,16 +61,16 @@ body {
     transform: translateY(5px);
     font-size: 20px;
 }
+.content-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
 
 #side-bar-section {
-    margin-left: 0;
-    position: fixed;
-    left: 0%;
     width: 250px;
-    float: left;
-    height: 100%;
+    height: 92vh;
     overflow-y: auto;
-    z-index: 1;
+    overflow-x: hidden;
 }
 
 #side-bar-section>div {
@@ -162,15 +163,12 @@ i {
 }
 
 #video-section {
-    margin: 20px 5px 0 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 255px;
-    margin-top: 60px;
-    padding-top: 20px;
-    margin-bottom: 100px;
+    height: 92vh;
+    overflow: auto;
 }
 
 .tile {
@@ -179,6 +177,7 @@ i {
     padding: 20px;
     border-radius: 10px;
     transition: all 0.2s ease-in;
+    height: fit-content;
 }
 .searchInput-container{
     display: flex;

@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
-    <link rel="stylesheet"
-    href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./script.js" defer></script>
@@ -14,565 +13,451 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <i class="fa-brands fa-youtube fa-youtube-logo"></i>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <i class="fa-brands fa-youtube fa-youtube-logo"></i>
+            </div>
+            <div class="searchInput-container" id="search-bar-container">
+                <input type="text" placeholder="Search" id="search-bar" class="search-bar">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-bell"></i>
+            </div>
+        </header>
+        <div class="content-container">
+            <section id="side-bar-section">
+                <div>
+                    <ul class="side-bar">
+                        <li id="active-title">
+                            <i class="fas fa-home">
+                            </i>
+                            <a href="#" class="side-bar-titles active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe87a;</i>
+                            <a href="#" class="side-bar-titles">
+                                Explore
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe064;
+                                
+                            </i>
+                            <a href="#" class="side-bar-titles">
+                                Subscriptions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="side-bar">
+                        <li>
+                            <i class="material-icons">
+                                &#xe04a;
+                            </i>
+                            <a href="#" class="side-bar-titles">
+                                Library
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe889;</i>
+                            <a href="#" class="side-bar-titles">
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                &#xe63a;
+                            </i>
+                            <a href="#" class="side-bar-titles">
+                                Your videos
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <a href="#" class="side-bar-titles">
+                                Watch later
+                            </a>
+                        </li>
+                        <li>
+                            <i class='fas fa-thumbs-up'></i>
+                            <a href="#" class="side-bar-titles">
+                                Liked videos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="side-bar-heading">
+                        SUBSCRIPTIONS
+                    </p>
+                    <ul class="side-bar">
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-1" alt="">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Naren's life
+                            </a>
+                        </li>
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://t3.ftcdn.net/jpg/05/67/72/12/360_F_567721271_mfAcSiDO815dELvS9RefbdYGT8nBM0u0.jpg" class="channel-dp-1">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Naren's Death
+                            </a>
+                        </li>
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://images.unsplash.com/photo-1663407978077-ca116e36abf0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJveWFsJTIwZW5maWVsZCUyMGhpbWFsYXlhbnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="channel-dp-1">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Naren's bike
+                            </a>
+                        </li>
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://media.geeksforgeeks.org/wp-content/uploads/20231229150906/dm5.jpeg" class="channel-dp-1">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Naren's clicks
+                            </a>
+                        </li>
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://media.geeksforgeeks.org/wp-content/uploads/20231229150325/dm1.jpeg" class="channel-dp-1">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Naren's Art
+                            </a>
+                        </li>
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://img.freepik.com/premium-vector/skull-pirates-logo-with-retro-style-monochrome-design_373791-1998.jpg" class="channel-dp-1">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Naren's ofz
+                            </a>
+                        </li>
+                        <li>
+                            <div class="channel-dp-container-1">
+                                <img loading="lazy" src="https://media.geeksforgeeks.org/wp-content/uploads/20231229150700/dm4.webp" class="channel-dp-1">
+                            </div>
+                            <a href="#" class="side-bar-titles">
+                                Best Tips
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="side-bar-heading">
+                        MORE FROM YOUTUBE
+                    </p>
+                    <ul class="side-bar">
+                        <li>
+                            <i class='fab fa-youtube'></i>
+                            <a href="#" class="side-bar-titles">
+                                YouTube Premium
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe54d;</i>
+                            <a href="#" class="side-bar-titles">
+                                Films
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-gamepad"></i>
+                            <a href="#" class="side-bar-titles">
+                                Gaming
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe639;</i>
+                            <a href="#" class="side-bar-titles">
+                                Live
+                            </a>
+                        </li>
+                        <li>
+                            <i class='fas fa-lightbulb'></i>
+                            <a href="#" class="side-bar-titles">
+                                Learning
+                            </a>
+                        </li>
+                        <li>
+                            <i class='fas fa-trophy'></i>
+                            <a href="#" class="side-bar-titles">
+                                Sport
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="side-bar">
+                        <li>
+                            <i class="material-icons">&#xe8b8;</i>
+                            <a href="#" class="side-bar-titles">
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <i class='fas fa-flag'></i>
+                            <a href="#" class="side-bar-titles">
+                                Report history
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe887;</i>
+                            <a href="#" class="side-bar-titles">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <i class="material-icons">&#xe87f;</i>
+                            <a href="#" class="side-bar-titles">
+                                Send feedback
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <main id="video-section">
+                <div class="tile">
+                    <img loading="lazy" src="https://c4.wallpaperflare.com/wallpaper/72/595/754/eagle-sunset-horizon-fly-wallpaper-preview.jpg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                How to fly using our kai
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                1 min ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://imageio.forbes.com/specials-images/imageserve/63be5d86554ba69a16e4e9c0/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                The phone is on my life is gone
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                15 years ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://www.indiafilings.com/learn/wp-content/uploads/2017/10/Tax-Free-Income-in-India.jpg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                No Tax from 2025!!! Says Modi
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                2 years ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://images.cnbctv18.com/wp-content/uploads/2018/04/taxes-tax_7.jpg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                Income tax is renamed as No Income only tax
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                1 min ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://pbs.twimg.com/media/DgN6l3gUcAAzZNE.jpg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                Tn Election is intresting than IPL
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                1 min ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://png.pngtree.com/thumb_back/fh260/background/20230609/pngtree-person-holding-round-yellow-ball-with-happy-face-image_2943761.jpg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                cheating and r**** are encouraged in india
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                1 min ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://www.researchgate.net/profile/Taiwo_Toluwani/publication/372066713/figure/fig2/AS:11431281172028370@1688431232237/A-political-cartoon-symbolizing-the-impossible-Siamese-suturing-of-two-opposing-regions.ppm" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                free medical insurance and checkup scheme for politician in ruling party
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                1 min ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-02/15/full/1707979171-5456.jpeg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                Price for bottel,not for water
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                25 years ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img loading="lazy" src="https://awantipolymoulds.com/wp-content/uploads/2021/09/blow-moulds-900x.jpg" id="image-1" class="images">
+                    <div class="details">
+                        <div class="tile-dp">
+                            <img loading="lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-2">
+                        </div>
+                        <div class="video-details">
+                            <a href="#" class="video-title">
+                                high performance sector of india in 2030 is Water bottel companies
+                            </a>
+                            <a href="#" class="channel-name">
+                                Naren's life
+                            </a>
+                            <a href="#" class="views">
+                                2M views
+                            </a>
+                            <i class="fas fa-circle"></i>
+                            <a href="#" class="time">
+                                1 min ago
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        <div class="searchInput-container" id="search-bar-container">
-            <input type="text"
-            placeholder="Search"
-            id="search-bar"
-            class="search-bar">
-            <button class="search-btn"><i class="fas fa-search"></i></button>
-        </div>
-        <div class="icon-container">
-            <!-- <i class="fas fa-search" id="search-icon"></i> -->
-            <i class="fas fa-bell"></i>
-        </div>
-    </header>
-    <section id="side-bar-section">
-        <div>
-            <ul class="side-bar">
-                <li id="active-title">
-                    <i class="fas fa-home">
+        <footer>
+            <div class="footer-container">
+                <div class="icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="icon">
+                    <i class="material-icons">&#xe87a;</i>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-search" id="search-icon"></i>
+                </div>
+                <div class="icon">
+                    <i class="material-icons">
+                        &#xe04a;
                     </i>
-                    <a href="#" 
-                    class="side-bar-titles active">
-                    Home
-                </a>
-            </li>
-            <li>
-                <i class="material-icons">&#xe87a;</i>
-                <a href="#" 
-                class="side-bar-titles">
-                Explore
-            </a>
-        </li>
-        <li>
-            <i class="material-icons">&#xe064;
-                
-            </i>
-            <a href="#" 
-            class="side-bar-titles">
-            Subscriptions
-        </a>
-    </li>
-</ul>
-</div>
-<div>
-    <ul class="side-bar">
-        <li>
-            <i class="material-icons">
-                &#xe04a;
-            </i>
-            <a href="#" 
-            class="side-bar-titles">
-            Library
-        </a>
-    </li>
-    <li>
-        <i class="material-icons">&#xe889;</i>
-        <a href="#"
-        class="side-bar-titles">
-        History
-    </a>
-</li>
-<li>
-    <i class="material-icons">
-        &#xe63a;
-    </i>
-    <a href="#"
-    class="side-bar-titles">
-    Your videos
-</a>
-</li>
-<li>
-    <i class="fas fa-clock"></i>
-    <a href="#" 
-    class="side-bar-titles">
-    Watch later
-</a>
-</li>
-<li>
-    <i class='fas fa-thumbs-up'></i>
-    <a href="#"
-    class="side-bar-titles">
-    Liked videos
-</a>
-</li>
-</ul>
-</div>
-<div>
-    <p class="side-bar-heading">
-        SUBSCRIPTIONS
-    </p>
-    <ul class="side-bar">
-        <li>
-            <div class="channel-dp-container-1">
-                <img loading = "lazy" src="https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg" class="channel-dp-1" alt="">
+                </div>
+                <div class="icon">
+                    <i class="material-icons">&#xe8b8;</i>
+                </div>
             </div>
-            <a href="#"
-            class="side-bar-titles">
-            Naren's life
-        </a>
-    </li>
-    <li>
-        <div class="channel-dp-container-1">
-            <img loading = "lazy" src=
-            "https://t3.ftcdn.net/jpg/05/67/72/12/360_F_567721271_mfAcSiDO815dELvS9RefbdYGT8nBM0u0.jpg"
-            class="channel-dp-1">
-        </div>
-        <a href="#"
-        class="side-bar-titles">
-        Naren's Death
-    </a>
-</li>
-<li>
-    <div class="channel-dp-container-1">
-        <img loading = "lazy" src="https://images.unsplash.com/photo-1663407978077-ca116e36abf0?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJveWFsJTIwZW5maWVsZCUyMGhpbWFsYXlhbnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="channel-dp-1">
+        </footer>
     </div>
-    <a href="#" 
-    class="side-bar-titles">
-    Naren's bike
-</a>
-</li>
-<li>
-    <div class="channel-dp-container-1">
-        <img loading = "lazy" src=
-        "https://media.geeksforgeeks.org/wp-content/uploads/20231229150906/dm5.jpeg"
-        class="channel-dp-1">
-    </div>
-    <a href="#" class="side-bar-titles">
-        Naren's clicks
-    </a>
-</li>
-<li>
-    <div class="channel-dp-container-1">
-        <img loading = "lazy" src=
-        "https://media.geeksforgeeks.org/wp-content/uploads/20231229150325/dm1.jpeg"
-        class="channel-dp-1">
-    </div>
-    <a href="#" class="side-bar-titles">
-        Naren's Art
-    </a>
-</li>
-<li>
-    <div class="channel-dp-container-1">
-        <img loading = "lazy" src=
-        "https://img.freepik.com/premium-vector/skull-pirates-logo-with-retro-style-monochrome-design_373791-1998.jpg"
-        class="channel-dp-1">
-    </div>
-    <a href="#"
-    class="side-bar-titles">
-    Naren's ofz
-</a>
-</li>
-<li>
-    <div class="channel-dp-container-1">
-        <img loading = "lazy" src=
-        "https://media.geeksforgeeks.org/wp-content/uploads/20231229150700/dm4.webp"
-        class="channel-dp-1">
-    </div>
-    <a href="#" class="side-bar-titles">
-        Best Tips
-    </a>
-</li>
-</ul>
-</div>
-<div>
-    <p class="side-bar-heading">
-        MORE FROM YOUTUBE
-    </p>
-    <ul class="side-bar">
-        <li>
-            <i class='fab fa-youtube'></i>
-            <a href="#"
-            class="side-bar-titles">
-            YouTube Premium
-        </a>
-    </li>
-    <li>
-        <i class="material-icons">&#xe54d;</i>
-        <a href="#"
-        class="side-bar-titles">
-        Films
-    </a>
-</li>
-<li>
-    <i class="fa fa-gamepad"></i>
-    <a href="#" 
-    class="side-bar-titles">
-    Gaming
-</a>
-</li>
-<li>
-    <i class="material-icons">&#xe639;</i>
-    <a href="#"
-    class="side-bar-titles">
-    Live
-</a>
-</li>
-<li>
-    <i class='fas fa-lightbulb'></i>
-    <a href="#" 
-    class="side-bar-titles">
-    Learning
-</a>
-</li>
-<li>
-    <i class='fas fa-trophy'></i>
-    <a href="#" 
-    class="side-bar-titles">
-    Sport
-</a>
-</li>
-</ul>
-</div>
-<div>
-    <ul class="side-bar">
-        <li>
-            <i class="material-icons">&#xe8b8;</i>
-            <a href="#" 
-            class="side-bar-titles">
-            Settings
-        </a>
-    </li>
-    <li>
-        <i class='fas fa-flag'></i>
-        <a href="#" 
-        class="side-bar-titles">
-        Report history
-    </a>
-</li>
-<li>
-    <i class="material-icons">&#xe887;</i>
-    <a href="#"
-    class="side-bar-titles">
-    Help
-</a>
-</li>
-<li>
-    <i class="material-icons">&#xe87f;</i>
-    <a href="#"
-    class="side-bar-titles">
-    Send feedback
-</a>
-</li>
-</ul>
-</div>
-</section>
-<main id="video-section">
-    <div class="tile">
-        <img loading = "lazy" src=
-        "https://c4.wallpaperflare.com/wallpaper/72/595/754/eagle-sunset-horizon-fly-wallpaper-preview.jpg"
-        id="image-1"
-        class="images">
-        <div class="details">
-            <div class="tile-dp">
-                <img loading = "lazy" src=
-                "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-                class="channel-dp-2">
-            </div>
-            <div class="video-details">
-                <a href="#" 
-                class="video-title">
-                How to fly using our kai
-            </a>
-            <a href="#"
-            class="channel-name">
-            Naren's life
-        </a>
-        <a href="#" 
-        class="views">
-        2M views
-    </a>
-    <i class="fas fa-circle"></i>
-    <a href="#"
-    class="time">
-    1 min ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://imageio.forbes.com/specials-images/imageserve/63be5d86554ba69a16e4e9c0/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            The phone is on my life is gone
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-15 years ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://www.indiafilings.com/learn/wp-content/uploads/2017/10/Tax-Free-Income-in-India.jpg"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            No Tax from 2025!!! Says Modi
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-2 years ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://images.cnbctv18.com/wp-content/uploads/2018/04/taxes-tax_7.jpg"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            Income tax is renamed as No Income only tax 
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-1 min ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://pbs.twimg.com/media/DgN6l3gUcAAzZNE.jpg"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            Tn Election is intresting than IPL 
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-1 min ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://png.pngtree.com/thumb_back/fh260/background/20230609/pngtree-person-holding-round-yellow-ball-with-happy-face-image_2943761.jpg"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            cheating and r**** are encouraged in india
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-1 min ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://www.researchgate.net/profile/Taiwo_Toluwani/publication/372066713/figure/fig2/AS:11431281172028370@1688431232237/A-political-cartoon-symbolizing-the-impossible-Siamese-suturing-of-two-opposing-regions.ppm"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            free medical insurance and checkup scheme for politician in ruling party
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-1 min ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://bsmedia.business-standard.com/_media/bs/img/article/2024-02/15/full/1707979171-5456.jpeg"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            Price for bottel,not for water
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-25 years ago
-</a>
-</div>
-</div>
-</div>
-<div class="tile">
-    <img loading = "lazy" src=
-    "https://awantipolymoulds.com/wp-content/uploads/2021/09/blow-moulds-900x.jpg"
-    id="image-1"
-    class="images">
-    <div class="details">
-        <div class="tile-dp">
-            <img loading = "lazy" src=
-            "https://www.shutterstock.com/image-vector/life-logo-hand-lettering-word-260nw-492019582.jpg"
-            class="channel-dp-2">
-        </div>
-        <div class="video-details">
-            <a href="#" 
-            class="video-title">
-            high performance sector of india in 2030 is Water bottel companies
-        </a>
-        <a href="#"
-        class="channel-name">
-        Naren's life
-    </a>
-    <a href="#" 
-    class="views">
-    2M views
-</a>
-<i class="fas fa-circle"></i>
-<a href="#"
-class="time">
-1 min ago
-</a>
-</div>
-</div>
-</div>
-</main>
-<footer>
-    <div class="footer-container">
-        <div class="icon">
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="icon">
-            <i class="material-icons">&#xe87a;</i>
-        </div>
-        <div class="icon">
-            <i class="fas fa-search" id="search-icon"></i>
-        </div>
-        <div class="icon">
-            <i class="material-icons">
-                &#xe04a;
-            </i>
-        </div>
-        <div class="icon">
-            <i class="material-icons">&#xe8b8;</i>
-        </div>
-    </div>
-</footer>
-
 </body>
 
 </html>
