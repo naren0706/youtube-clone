@@ -151,7 +151,7 @@ i {
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: 92vh;
     overflow: auto;
     width: 100%;
