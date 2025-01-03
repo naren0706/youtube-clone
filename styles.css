@@ -33,7 +33,6 @@ body {
 .search-btn:hover,
 .search-btn:active{
     background-color: lightgrey;
-    transform: scale(1.2);
 }
 
 .header {
@@ -65,22 +64,12 @@ body {
     gap: 10px;
 }
 
-/* #search-icon{
-    display: none ;
-} */
-
 .fas {
-    font-size: 20px;
-}
-
-#app-icon {
-    transform: translateY(5px);
     font-size: 20px;
 }
 
 .content-container {
     display: flex;
-    /* grid-template-columns: 20% 80%; */
 }
 
 
@@ -112,10 +101,6 @@ body {
 
 .material-icons {
     color: rgb(99, 95, 94);
-}
-
-#home-icon {
-    color: red;
 }
 
 .side-bar-titles {
@@ -159,7 +144,7 @@ i {
     left: 50%;
 }
 
-#video-section {
+.video-section {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -170,7 +155,7 @@ i {
     width: 100%;
 }
 
-#side-bar-section {
+.side-bar-section {
     width: 20vw;
     height: 92vh;
     overflow-y: auto;
@@ -178,7 +163,7 @@ i {
     transition: all 0.5s ease;
 }
 
-#side-bar-section>div {
+.side-bar-section>div {
     margin-bottom: 60px;
 }
 
@@ -332,7 +317,7 @@ footer {
         justify-self: center;
     }
 
-    #searchInput-container {
+    .searchInput-container {
         display: flex;
     }
 }
@@ -348,19 +333,13 @@ footer {
         display: none;
     }
 
-    #video-section {
+    .video-section {
         margin-left: 0;
     }
 
-    #youtube-logo-container {
-        margin-left: 0;
-    }
     .searchInput-container {
         display: none;
     }
-    
-
-
 }
 
 @media all and (min-width: 550px) {
@@ -378,6 +357,9 @@ footer {
         display: none;
     }
     .side-bar>li{
-        grid-template-columns: 1fr 0fr;
+        display: block;
+    }
+    .channel-dp-1{
+        left: 0;
     }
 }

@@ -1,7 +1,12 @@
 window.addEventListener("resize", adjustForScreenWidth);
 document.getElementById("search-icon").addEventListener("click", toggleSearchBar);
 document.getElementById("hamburger-icon").addEventListener("click", toggleSideBar);
+document.getElementById("btn-search-content").addEventListener("click", contentSearch);
 
+function contentSearch() {
+    var searchInput = document.getElementById("search-bar");
+    console.log(searchInput.value);    
+}
 function toggleSideBar() {
     {
         const sideBar = document.getElementById("side-bar-section");
